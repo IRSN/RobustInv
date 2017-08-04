@@ -33,8 +33,11 @@ arma::vec phi(arma::vec myarg)
 
         // A&S formula 7.1.26
         double t = 1.0/(1.0 + p*x);
+        double t2 = t*t;
+        double t3 = t2*t;
+        double t4 = t3*t;
         //double y = 1.0 - (((((a5*t + a4)*t) + a3)*t + a2)*t + a1)*t*exp(-x*x);
-        double y = 1.0 - (a1 + a2*t + a3*t*t + a4*t*t*t + a5*t*t*t*t) *t*exp(-x*x);
+        double y = 1.0 - (a1 + a2*t + a3*t2 + a4*t3 + a5*t4) *t*exp(-x*x);
 
         result(ii) = 0.5*(1.0 + sign*y);
     }
@@ -100,7 +103,7 @@ arma::vec fast_suroptinv(
     }
 
     // int end = clock();
-    // cout << "100    ";
+    // cout << "106    ";
     // cout << end-start << endl;
     // start = clock();
 
@@ -119,7 +122,7 @@ arma::vec fast_suroptinv(
     }
 
     // end = clock();
-    // cout << "117    ";
+    // cout << "125    ";
     // cout << (end-start) << endl;
     // start = clock();
 
@@ -163,7 +166,7 @@ arma::vec fast_suroptinv(
         }
 
         // end = clock();
-        // cout << "192        ";
+        // cout << "169        ";
         // cout << end-start << endl;
         // start = clock();
 
@@ -191,7 +194,7 @@ arma::vec fast_suroptinv(
         vi_sort = arma::sort(validvi);
 
         // end = clock();
-        // cout << "220        ";
+        // cout << "197        ";
         // cout << end-start << endl;
         // start = clock();
 
@@ -227,7 +230,7 @@ arma::vec fast_suroptinv(
         }
 
         // end = clock();
-        // cout << "251        ";
+        // cout << "233        ";
         // cout << end-start << endl;
         // start = clock();
 
@@ -240,7 +243,7 @@ arma::vec fast_suroptinv(
         pn_oneminuspn = prop_simu % (1-prop_simu); // % does the same as * in R. Element per element product
 
         // end = clock();
-        // cout << "270        ";
+        // cout << "246        ";
         // cout << end-start << endl;
         // start = clock();
 
@@ -248,7 +251,7 @@ arma::vec fast_suroptinv(
         pnorms = phi(ui_and_vi);
 
         // end = clock();
-        // cout << "279        ";
+        // cout << "254        ";
         // cout << end-start << endl;
         // start = clock();
 
@@ -261,7 +264,7 @@ arma::vec fast_suroptinv(
     }
 
     // end = clock();
-    // cout << "304    ";
+    // cout << "267    ";
     // cout << end-start << endl;
     // start = clock();
 
