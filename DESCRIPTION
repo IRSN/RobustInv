@@ -1,6 +1,6 @@
 Package: RobustInv
 Type: Package
-Title: Robust Inversion of expensive black-box functions
+Title: Robust inversion of expensive black-box functions
 Version: 0.0.1
 Date: 2015-09-01
 Author: Clement Chevalier, Yann Richet, Gregory Caplin
