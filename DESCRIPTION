@@ -2,6 +2,7 @@ Package: RobustInv
 Type: Package
 Title: "Robust inversion of expensive black-box functions"
 Version: 0.0.2
+Date: 2015-09-01
 Author: Clement Chevalier, Yann Richet, Gregory Caplin
 Maintainer: Clement Chevalier <clement.chevalier@unine.ch>
 Description: Sequential design of experiments for robust inversion using Gaussian process models. The most important function is 'EGRI'.
