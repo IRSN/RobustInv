@@ -291,6 +291,9 @@ max_surnew_robinv <- function(lower, upper, optimcontrol=NULL,
                           integration.weights=integration.weights,
                           new.noise.var=new.noise.var,current.sur=current.sur,randmatrix=randmatrix)
 
+        o$par <- t(matrix(o$par,nrow=d)); colnames(o$par) <- colnames(model@X)
+        o$value <- as.matrix(o$value); colnames(o$value) <- colnames(model@y)
+
         return(list(par=o$par, value=o$value))
     }
 
