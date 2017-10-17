@@ -1,7 +1,7 @@
 
 ![Analytics](https://ga-beacon.appspot.com/UA-109580-20/RobustInv)
 
-[![Build Status](https://travis-ci.org/IRSN/robustinv.png)](https://travis-ci.org/IRSN/robustinv)
+[![Build Status](https://travis-ci.org/IRSN/RobustInv.png)](https://travis-ci.org/IRSN/RobustInv)
 
 # RobustInv
 
