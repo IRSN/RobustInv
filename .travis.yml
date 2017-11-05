@@ -7,5 +7,7 @@ os:
   - linux
   - osx
 before_install:
-- if [ "$TRAVIS_OS_NAME" = "osx" ] ; then brew update ; brew reinstall gcc48 --with-fortran; fi
-- Rscript -e 'devtools::install_github("IRSN/DiceKriging")'
+- if [ "$TRAVIS_OS_NAME" = "osx" ] ; then brew update ; brew reinstall gcc46 --with-fortran; fi
+#- Rscript -e 'devtools::install_github("IRSN/DiceKriging")'
+r_github_packages:
+  - IRSN/DiceKriging
