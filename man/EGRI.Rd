@@ -23,6 +23,8 @@ Currently, only the \code{"surnew"} criterion is available.}
 \item{batchsize}{The size of the batch of points evaluated at each iteration.}
 
 \item{opt.index}{Array with integers corresponding to the indices of the nuisance parameters.}
+  
+\item{inv.indev}{Array with integers corresponding to the indices of the controlled parameters.}
 
 \item{lower}{Array of size d. Lower bound of the input domain.}
 
@@ -41,8 +43,6 @@ For the \code{"surnew"} criterion, see the help of the \code{max_surnew_robinv} 
 The items are the same as in the \code{km} function of the DiceKriging package.}
 
 \item{...}{Other arguments of the objective function fun.}
-
-\item{inv.indev}{Array with integers corresponding to the indices of the controlled parameters.}
 }
 \value{
 A list with the following fields.
