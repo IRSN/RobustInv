@@ -24,7 +24,7 @@ Currently, only the \code{"surnew"} criterion is available.}
 
 \item{opt.index}{Array with integers corresponding to the indices of the nuisance parameters.}
   
-\item{inv.indev}{Array with integers corresponding to the indices of the controlled parameters.}
+\item{inv.index}{Array with integers corresponding to the indices of the controlled parameters.}
 
 \item{lower}{Array of size d. Lower bound of the input domain.}
 
