@@ -15,7 +15,7 @@ environment:
 
 build_script:
   - travis-tool.sh install_deps
-  - cmd: Rscript -e "install.packages(commandArgs(TRUE), repos='https://cran.rstudio.com', INSTALL_opts='', type='both')" devtools
+  - cmd: Rscript -e "install.packages('devtools', repos='https://cran.rstudio.com', INSTALL_opts='', type='both')"
   - cmd: Rscript -e "devtools::install_github('IRSN/DiceKriging')"
 
 test_script:
