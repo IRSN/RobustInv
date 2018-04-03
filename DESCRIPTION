@@ -9,6 +9,6 @@ Description: Sequential design of experiments for robust inversion using Gaussia
 Depends: R (>= 3.2.1), Rcpp, RcppArmadillo
 LinkingTo: Rcpp, RcppArmadillo
 Imports: DiceKriging, KrigInv, grid, mnormt, foreach
-Suggests: doParallel, doMC
+Suggests: doParallel
 NeedsCompilation: yes
 License: GPL-3
