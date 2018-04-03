@@ -8,7 +8,6 @@ init:
         Import-Module '..\appveyor-tool.ps1'
 install:
   - ps: Bootstrap
-  - cmd: R -e "devtools::install_github('IRSN/DiceKriging')"
 
 # Adapt as necessary starting from here
 environment:
@@ -16,6 +15,7 @@ environment:
 
 build_script:
   - travis-tool.sh install_deps
+  - cmd: R -e "devtools::install_github('IRSN/DiceKriging')"
 
 test_script:
   - travis-tool.sh run_tests
