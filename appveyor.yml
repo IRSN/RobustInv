@@ -7,9 +7,12 @@ init:
         Invoke-WebRequest http://raw.github.com/krlmlr/r-appveyor/master/scripts/appveyor-tool.ps1 -OutFile "..\appveyor-tool.ps1"
         Import-Module '..\appveyor-tool.ps1'
 install:
-  ps: Bootstrap
+  - ps: Bootstrap
+  - cmd: R -e "devtools:install_github('IRSN/DiceKriging')"
 
 # Adapt as necessary starting from here
+environment:
+  - USE_RTOOLS: true
 
 build_script:
   - travis-tool.sh install_deps
