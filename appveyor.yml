@@ -8,7 +8,7 @@ init:
         Import-Module '..\appveyor-tool.ps1'
 install:
   - ps: Bootstrap
-  - cmd: R -e "devtools:install_github('IRSN/DiceKriging')"
+  - cmd: R -e "devtools::install_github('IRSN/DiceKriging')"
 
 # Adapt as necessary starting from here
 environment:
