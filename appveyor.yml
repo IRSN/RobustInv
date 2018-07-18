@@ -16,11 +16,6 @@ branches:
     - master
 skip_tags: true
 
-environment:
-  USE_RTOOLS: true
-  R_VERSION: release
-  R_ARCH: x64
-
 build_script:
   - travis-tool.sh install_deps
   - ps: $env:VERSION_RELEASE="$(date +%Y%m%d-%H%M)"
