@@ -41,7 +41,7 @@ deploy:
   provider: releases
   name: "$TRAVIS_OS_NAME"
   api_key:
-    secure: "GAD1xvd6MajE8AasywvMuDApe73z0wDBsRwZ/V1QQgf4oyrbM17P63HuHd3gxVEwKXP3TqTaYKHqlOnPWsgm//FqIkj0Ai6TBVrxCOWrSkN5yxyNV3A49JfwUtpN/7hPK4K8jR04jKU/XqSMA6Qm5q6ykp314BhNTPkhhjUNark="
+    secure: "k50uXik0C/pbzJY5bYLqUtNXkX3amwU3DL/RfMP6pQun/nU40oVZ7bK9HYSqIo7iIryjAT7gqrWPRnqfmzRO6Xycma1XUAjbcQtq2L+512/FOwPeW7CWlreuVE9k9EJxH3rD+X2LqHAmSq1gCWC3G5o9+YacAhJCAvWWq+fVoeNv5o9eQRyugqQtSvFXA/xuRDYrskyjrBWfi1gBJEvBvbQArabdZl+y7wYba3T3FzacBk0Sq+kBvqAJa+TWqTx9yuqPgw8Gupq8WAwSmUFPG6UREK2ffbJGekb3kS0SgXSZJileA0LcN3cw56ZPygnsR9/JlL7Hw82aUEt222lqOFAGAwtukI6+ZeJdtH8hdyxH0kuzc+8GnG2PTXaDxjv643UBP0vhHdyA6gyr8erhU/c1uJr+tvA8F94MInDaAfHJZvJhu/g/sz+2IKwtC+tSFyMe2Z7MzSWDVcwaCb6+i2Z/GQz6POgaTHKR5trs4T/bTx3LOtXrxXTrHOWlwML1ouIfLMqY0URxgwS1P3pyANyFWHnlI/clPzM1kn6G9eCHJX63NRhu41h8PTHNGj9KrrJgduUttZKM7RQ7TP39URwoDz8xioCtbpv+HZuVJV5Hcof0mrtTlm81QyEr4pvqGIPw1dkVC3oR1VeEU2IUL9Jw/BfNnjMJdcHG3FkVz0g="
   file_glob: true
   file: RobustInv*.t*gz
   skip_cleanup: true
