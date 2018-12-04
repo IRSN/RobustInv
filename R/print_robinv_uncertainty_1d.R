@@ -124,6 +124,7 @@ print_robinv_uncertainty_1d <- function(model,T,lower,upper,opt.index,inv.index,
   if(is.null(resolution)) resolution <- 100
   n.inv.points <- resolution
   all.points <-  matrix(seq(from=lower.xinv,to=upper.xinv,length=resolution),ncol=1)
+  inv.pred.points <- all.points
   n.optpoints <- control$n.optpoints;if(is.null(n.optpoints)) n.optpoints <- 250*d.opt
   
   if(pnplot & maxmkplot & newpar) par(mfrow=c(1,2))
@@ -153,7 +154,6 @@ print_robinv_uncertainty_1d <- function(model,T,lower,upper,opt.index,inv.index,
     }
     colors.transluded <- translude(color=color.tab,alpha=alpha.tab)
   
-    inv.pred.points <- all.points
     opt.pred.points <- t(lower.opt + t(sobol(n=n.optpoints,dim=d.opt))*(upper.opt-lower.opt))
     if(d.opt==1) opt.pred.points <- matrix(opt.pred.points,ncol=1)
     
