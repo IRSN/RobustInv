@@ -23,8 +23,7 @@
 #' result <- unscalingFun1d(scaled_t,knots=knots,eta=eta)
 #' # now result is equal to t !
 #' 
-#' # an example of unscaling of uniformly distributed points to have more points in regions 
-#' where eta is large.
+#' # an example of unscaling of uniformly distributed points to have more points in regions where eta is large.
 #' myrands <- matrix( runif(2000),ncol=2  )
 #' 
 #' knots <- c(0,0.5,1)
