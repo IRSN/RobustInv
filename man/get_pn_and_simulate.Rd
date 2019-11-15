@@ -74,6 +74,7 @@ conditional simulations in a set of (possibly: well-chosen) simulation points.
 }
 \examples{
 library(KrigInv)
+library(randtoolbox)
 myfun <- branin_robinv
 d <- 3
 

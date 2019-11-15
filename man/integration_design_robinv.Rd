@@ -136,6 +136,7 @@ associated to the first integration point and so on.
 }
 \examples{
 library(KrigInv)
+library(randtoolbox)
 myfun <- branin_robinv
 d <- 3
 

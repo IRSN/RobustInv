@@ -50,6 +50,7 @@
 #' @examples 
 #' 
 #' library(KrigInv)
+#' library(randtoolbox)
 #' myfun <- function(x) return(-1 * branin_robinv(x))
 #' d <- 3
 #' 

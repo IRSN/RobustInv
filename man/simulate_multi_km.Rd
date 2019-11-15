@@ -42,6 +42,7 @@ Performs conditional or non-conditional simulations in n different batches of p 
 }
 \examples{
 library(KrigInv)
+library(randtoolbox)
 myfun <- branin_robinv
 d <- 3
 

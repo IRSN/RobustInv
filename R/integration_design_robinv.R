@@ -115,6 +115,7 @@
 #' @author Clement Chevalier \email{clement.chevalier@@unine.ch}
 #' @examples 
 #' library(KrigInv)
+#' library(randtoolbox)
 #' myfun <- branin_robinv
 #' d <- 3
 #' 
