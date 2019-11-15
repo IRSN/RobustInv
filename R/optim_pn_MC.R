@@ -28,6 +28,7 @@
 #' @examples 
 #' library(KrigInv)
 #' library(mnormt)
+#' library(randtoolbox)
 #' myfun <- branin_robinv
 #' d <- 3
 #' 
