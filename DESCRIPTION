@@ -12,3 +12,4 @@ Imports: DiceKriging, KrigInv, grid, mnormt, foreach, randtoolbox
 Suggests: doParallel
 NeedsCompilation: yes
 License: GPL-3
+RoxygenNote: 6.1.0
