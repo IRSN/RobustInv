@@ -10,7 +10,7 @@
 #' @param iter Number of iterations. At each iteration, a batch of batchsize point is evaluated in parallel.
 #' @param batchsize The size of the batch of points evaluated at each iteration.  
 #' @param opt.index Array with integers corresponding to the indices of the nuisance parameters.
-#' @param inv.indev Array with integers corresponding to the indices of the controlled parameters. 
+#' @param inv.index Array with integers corresponding to the indices of the controlled parameters. 
 #' @param lower Array of size d. Lower bound of the input domain.
 #' @param upper Array of size d. Upper bound of the input domain. 
 #' @param new.noise.var Optional scalar value of the noise variance of the new observations. 
