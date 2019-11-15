@@ -8,7 +8,7 @@ Maintainer: Clement Chevalier <clement.chevalier@unine.ch>
 Description: Sequential design of experiments for robust inversion using Gaussian process models. The most important function is 'EGRI'.
 Depends: R (>= 3.2.1), Rcpp, RcppArmadillo
 LinkingTo: Rcpp, RcppArmadillo
-Imports: DiceKriging, KrigInv, grid, mnormt, foreach
+Imports: DiceKriging, KrigInv, grid, mnormt, foreach, randtoolbox
 Suggests: doParallel
 NeedsCompilation: yes
 License: GPL-3
