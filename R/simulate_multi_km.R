@@ -68,7 +68,7 @@
 #'                             pn.only=FALSE)
 #' }
 simulate_multi_km <- function(object, nsim = 1, nbatch = 1, seed = NULL, newdata = NULL,
-                              cond = FALSE, nugget.sim = 0, checkNames = TRUE, type="UK",
+                              cond = FALSE, nugget.sim = .Machine$double.eps, checkNames = TRUE, type="UK",
                               pn.only=FALSE) {
   
   
